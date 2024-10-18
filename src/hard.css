@@ -1,0 +1,79 @@
+.app-container {
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+  border: 0.5px solid #007afd;
+  background-color: white;
+  border-radius: 20px;
+  width: 33%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-text {
+  font-weight: 100;
+  font-size: small;
+  margin-top: 0px;
+}
+
+.scroll-container {
+  height: 430px;
+  width: 90%;
+  overflow-y: auto;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.app-container h1 {
+  color: #ff0808;
+}
+
+.cat-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.scroll-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007afd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.scroll-button:hover {
+  background-color: #45a049;
+}
+
+.loading {
+  height: 30px;
+  border: 2px solid grey;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.error-message {
+  color: red;
+  font-size: 18px;
+}
+/* Adding media query when website page width is less then 640px */
+@media (max-width: 640px) {
+  .app-container {
+    width: 90%;
+  }
+}

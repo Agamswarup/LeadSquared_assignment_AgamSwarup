@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  background-color: #e3f4fc;
+  padding: 1rem;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 0.5px solid rgb(39, 85, 250);
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+.lead {
+  color: #007afe;
+  font-size: x-large;
+  font-weight: 700;
+}
+.squared {
+  color: black;
+  font-size: x-large;
+  font-weight: 700;
+}
+.assignment {
+  color: black;
+  font-weight: 200;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-item {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-item:hover {
+  color: #2769db;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.navbar-hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  color: black;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    flex-direction: column;
+    background-color: #333;
+    width: 100%;
+    transition: left 0.3s ease;
+  }
+
+  .navbar-links.open {
+    left: 0;
+  }
+
+  .navbar-hamburger {
+    display: flex;
+  }
+}

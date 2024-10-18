@@ -1,0 +1,83 @@
+.app-container-medium {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 30px;
+
+  border: 0.5px solid #007afd;
+
+  border-radius: 20px;
+  width: 33%;
+  height: 100vh;
+}
+.app-container-medium h1 {
+  color: #e3c800;
+}
+.fetch-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007afd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   width: 70%;
+}
+
+.fetch-button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+}
+
+.card-grid-m {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.card-m {
+  padding: 0px;
+  overflow: hidden;
+}
+
+.cat-image-m {
+  width: 100%;
+  height: 100px;
+  border: 0px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  font-size: 13px;
+  background-color: #008bba00;
+  color: rgb(0, 0, 0);
+  border: 0.01px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+/* Adding media query when website page width is less then 640px */
+@media (max-width: 640px) {
+  .app-container-medium {
+    width: 90%;
+  }
+}

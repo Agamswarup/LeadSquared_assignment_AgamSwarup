@@ -1,0 +1,23 @@
+.appcontainer {
+    font-family: serif;
+  margin-top: 0px;
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(171, 216, 255);
+}
+
+.task {
+  margin: 20px;
+  display: flex;
+  flex-direction: row; 
+  gap: 15px;
+  justify-content: space-around;
+}
+
+/* media query for screen widths 640px and below */
+@media (max-width: 640px) {
+  .task {
+    flex-direction: column; /* Change task div from row to column layout */
+    align-items: center; 
+  }
+}
